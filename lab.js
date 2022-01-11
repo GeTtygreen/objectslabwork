@@ -176,11 +176,10 @@ console.log(totalPopulation())
 
 //Code Here
 function ingredients(arr){
-  console.log(arr)
-  
-  let {carb, fat, protein}= arr ;
-  
-  
+  const nutrition = []
+  const {carb, fat, protein}= arr ;
+  nutrition.push(carb, fat, protein)
+  return nutrition;
 }
 console.log(ingredients({carb:4 ,fat:42 , protein: 60}))
 
@@ -214,6 +213,8 @@ console.log(user)
 */
 
 //Code Here
+delete user.age; 
+console.log(user)
 
 
 //////////////////////////// PROBLEM 12 ////////////////////////////
@@ -224,7 +225,11 @@ console.log(user)
 */
 
 //Code here
-
+class cat {
+  constructor(name,age,color)
+}
+let cat = new cat(tinkles,2,brown)
+console.log(cat.no)
 
 
 //////////////////////////// PROBLEM 13 ////////////////////////////
@@ -236,6 +241,7 @@ console.log(user)
 */
 
 //Code here
+
 
 //////////////////////////// PROBLEM 14 ////////////////////////////
 /*
