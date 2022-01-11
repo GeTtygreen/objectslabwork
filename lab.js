@@ -5,6 +5,10 @@
 */
 
 //Code here
+const me = {
+  name : "Nicholas ",
+  age : 30
+}
 
 
 
@@ -17,6 +21,14 @@
 
 //Code here
 
+const dog = {
+  name:'Rover',
+  color : 'Tri-color',
+  age : '6 months ',
+  goodBoy :'true' 
+
+}
+
 
 
 //////////////////////////// PROBLEM 3 ////////////////////////////
@@ -24,13 +36,15 @@
 
 //Code here
 
+console.log(dog.name)
+
 
 
 //////////////////////////// PROBLEM 4 ////////////////////////////
 /* Print out the color of the dog you created in problem 2 using bracket-notation. */
 
 //Code here
-
+console.log(dog['color'])
 
 
 //////////////////////////// PROBLEM 5 ////////////////////////////
@@ -40,6 +54,14 @@
 */
 
 //Code here
+const favoriteThings = {
+  band:'The Internet',
+  food:'Seafood' ,
+  person:'Daughter', 
+  book:'Javascript& Jquery',
+  movie:'Belly',
+  holiday:'Summer'
+}
 
 
 /*
@@ -47,6 +69,10 @@
 */
 
 //Code here
+favoriteThings['car']= 'Mercedes G Wagon';
+favoriteThings['show']= 'Rick and Morty ';
+
+console.log(favoriteThings)
 
 
 /*
@@ -56,6 +82,9 @@
 
 //Code here
 
+favoriteThings.food = 'chicken nuggets'
+
+console.log(favoriteThings)
 
 //////////////////////////// PROBLEM 6 ////////////////////////////
 
@@ -74,6 +103,15 @@ var carDetails = {
 
 //Code Here
 
+//let color = carDetails.color;
+//let make = carDetails.make; 
+//let model = carDetails.model; 
+//let year = carDetails.year; 
+
+let {color, make, model ,year} = carDetails;
+console.log(color,make, model,year)
+
+
 
 
 //////////////////////////// PROBLEM 7 ////////////////////////////
@@ -86,11 +124,20 @@ var carDetails = {
 
 function greeting( obj ) {
   //Code Here
-  
+  const info = {
+    title : 'Mr',
+    firstName : 'Shawn',
+    lastName : 'Carter'
+
+  }
+  let{title,firstName,lastName} = info; 
   // Do not edit the code below.
   return 'Hello, ' + title + ' ' + firstName + ' ' + lastName + '!';
   // Do not edit the code above.
 }
+console.log(greeting())
+
+
 
 
 
@@ -105,8 +152,17 @@ function greeting( obj ) {
 */
 
 //Code Here
-
-
+function totalPopulation(){
+  let info = {
+    utah:27000000,
+    california : 2345245000,
+    texas : 1500234000,
+    arizona : 30000000
+  } 
+  let {utah, california,texas,arizona}= info; 
+  return utah + california + texas + arizona 
+}
+console.log(totalPopulation())
 
 //////////////////////////// PROBLEM 9 ////////////////////////////
 
@@ -119,7 +175,14 @@ function greeting( obj ) {
 */
 
 //Code Here
-
+function ingredients(arr){
+  console.log(arr)
+  
+  let {carb, fat, protein}= arr ;
+  
+  
+}
+console.log(ingredients({carb:4 ,fat:42 , protein: 60}))
 
 
 //////////////////////////// PROBLEM 10 ////////////////////////////
@@ -133,14 +196,16 @@ var user = {
   username: 'bryansmith33'
 };
 // Do not edit the code above.
-
 /*
-  Let's say I, the user, decided to change my name and email address to the following:
-  name -> 'Bryan G. Smith' and email -> 'bryan.smith@devmounta.in'.
-  Make that change without modifying the original object code above.
+Let's say I, the user, decided to change my name and email address to the following:
+name -> 'Bryan G. Smith' and email -> 'bryan.smith@devmounta.in'.
+Make that change without modifying the original object code above.
 */
 
 //Code Here
+user.name = 'Bryan G. Smith '
+user.email = 'bryan.smith@devmoutain'
+console.log(user)
 
 
 //////////////////////////// PROBLEM 11 ////////////////////////////
