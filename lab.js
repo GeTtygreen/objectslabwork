@@ -225,11 +225,15 @@ console.log(user)
 */
 
 //Code here
-class cat {
-  constructor(name,age,color)
+class Cat {
+  constructor(name,age,color){
+    this.name = name ;
+    this.age = age ; 
+    this.color = color ; 
+    console.log(this.name ,'Thats my dog')
+  }
 }
-let cat = new cat(tinkles,2,brown)
-console.log(cat.no)
+const catOne = new Cat ("Twinkles", 6 + 'months',"black"+ "brown");
 
 
 //////////////////////////// PROBLEM 13 ////////////////////////////
@@ -241,7 +245,18 @@ console.log(cat.no)
 */
 
 //Code here
-
+class Wizard {
+  constructor(name, age ,favoriteSpell){
+    this.name = name; 
+    this.age = age; 
+    this.favoriteSpell = favoriteSpell;
+  }
+  castSpell(){
+    console.log(this.name, "has cast "+ this.favoriteSpell);
+  }
+}
+const wizardOne = new Wizard ('Harry Potter',22, "abracadabra" ) 
+wizardOne.castSpell()
 
 //////////////////////////// PROBLEM 14 ////////////////////////////
 /*
@@ -267,6 +282,22 @@ console.log(cat.no)
 */
 
 //Code Here
+  class Phone {
+    constructor(brand,model,storage,color, price,sold ){
+      this.brand = brand;
+      this.model = model; 
+      this.storage= storage; 
+      this.color = color; 
+      this.price= price;  
+      this.sold = sold; 
+    }
+    sell(){
+      console.log(this.brand,this.model,'has been sold ')
+    }
+    changePrice(newPrice){
+      const phoneOne = new Price ()
+    }
+  }
 
   
 /*
